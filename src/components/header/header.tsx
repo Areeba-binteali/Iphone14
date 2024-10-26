@@ -12,7 +12,7 @@ export default function Header() {
     <div className="container">
         <div className={styles.headerMain}>
         <div className={styles.image}>
-            <img src="/images/logo.png" alt="logo" />
+            <img src="/images/Logo.png" alt="logo" />
         </div>
         <div className={styles.search}>
             <form action="../">
