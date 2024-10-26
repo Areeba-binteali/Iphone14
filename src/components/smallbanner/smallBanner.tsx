@@ -19,7 +19,7 @@ export default function SmallBanner() {
                 </div>
                 <div className={styles.content}>
                     <h4 className={styles.productTitle}>Apple AirPods <span>Max</span></h4>
-                    <p className={styles.productDescription}>Computational audio. Listen, it's powerful</p>
+                    <p className={styles.productDescription}>Computational audio. Listen, it&apos;s powerful</p>
                 </div>
             </div>
             <div className={styles.singleContainer}>
