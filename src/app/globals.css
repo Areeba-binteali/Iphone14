@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter18pt-Regular.woff2') format('woff2'), 
+  url('fonts/Inter18pt-Regular.woff') format('woff'),
+  url('fonts/Inter18pt-Medium.woff2') format('woff2'), 
+  url('fonts/Inter18pt-Medium.woff') format('woff');
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter';
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.container{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.shopNow{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 16px 56px;
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-size: 18px;
+}
+.shopNow-black{
+  color: #000;
+  border: 1px solid #000;
+  padding: 16px 56px;
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .container{
+    max-width: 980px;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .shopNow, .shopNow-black{
+    font-size: 16px;
+    padding: 16px 30px;
+  }
+}

@@ -1,0 +1,82 @@
+
+
+.arrivalsMain{
+    padding: 80px 0;
+}
+.arrivalsMain svg{
+    font-size: 32px;
+    color: #909090;
+    align-self: flex-end;
+}
+.productsMain{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-top: 50px;
+}
+.navigations{
+    color: #8B8B8B;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.navigations ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 50px;
+}
+.active{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.productSingle{
+    background-color: #F6F6F6;
+    width: 23%;
+    padding: 24px 16px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.price{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.button{
+    background-color: #000;
+    color: #fff;
+    padding: 12px 0;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    font-size: 14px;
+}
+@media (max-width: 1024px) {
+    .productSingle{
+        width: 30%;
+    }
+}
+
+@media (max-width: 991px) {
+    .productSingle{
+        width: 47%;
+    }
+}
+
+@media (max-width: 767px) {
+    .productSingle{
+        width: 100%;
+    }
+}

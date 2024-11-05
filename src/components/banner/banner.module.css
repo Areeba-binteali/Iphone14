@@ -1,0 +1,73 @@
+.banner{
+    background-color: #211C24;
+}
+.banner .flexDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tagline{
+    color: #fff;
+    opacity: 40%;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'Inter';
+}
+.title{
+    font-size: 92px;
+    line-height: 102px;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 100;
+    margin: 20px 0;
+}
+.title span{
+    font-weight: 700;
+}
+.subtitle{
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: medium;
+    margin-bottom: 50px;
+}
+.subDivs{
+    width: 50%;
+}
+.subDivs img{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .subDivs{
+        width: 100%;
+    }
+    .flexDiv .subDivs:nth-child(1){
+        padding: 100px 30px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .subDivs img{
+        width: 100%;
+    }
+    .flexDiv .subDivs:nth-child(1){
+        padding: 80px 20px 0;
+    }
+    .flexDiv .subDivs:nth-child(2){
+        padding: 20px 50px 0;
+    }
+    .title{
+        font-size: 62px;
+        line-height: 72px;
+    }
+    .tagline{
+        font-size: 22px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+}

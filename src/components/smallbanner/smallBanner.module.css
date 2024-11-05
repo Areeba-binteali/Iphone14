@@ -1,0 +1,116 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.smallDivs{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.singleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+.smallDivs .singleContainer:nth-child(1){
+    width: 100%;
+}
+.smallDivs .singleContainer:nth-child(2), .smallDivs .singleContainer:nth-child(3){
+    width: 50%;
+}
+.smallDivs .singleContainer:nth-child(2), .lastContainer{
+    background-color: #ededed;
+}
+.smallDivs .singleContainer:nth-child(3){
+    background-color: #353535;
+    color: #fff;
+}
+.smallDivs .shopNow{
+    color: #000;
+    border-color: #000;
+}
+.singleContainer .content{
+    width: 50%;
+}
+.singleContainer img{
+    width: auto;
+}
+.singleContainer .productTitle{
+    font-size: 29px;
+    line-height: 40px;
+    font-weight: 200;
+    font-family: 'Inter';
+    margin-bottom: 10px;
+}
+.singleContainer .productTitle span{
+    font-weight: 500;
+}
+.lastContainer .productTitle{
+    font-size: 64px;
+    line-height: 74px;
+}
+.lastContainer .productDescription{
+    margin-bottom: 30px;
+}
+.smallDivs .singleContainer:nth-child(1) .productTitle{
+    font-size: 49px;
+    line-height: 59px;
+}
+.productDescription{
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 300;
+}
+.lastContainer{
+    padding-right: 0;
+    padding-left: 50px;
+}
+.image{
+    width: 50%;
+}
+.lastContainer .image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+    .smallDivs{
+        width: 100%;
+    }
+    .singleContainer{
+        border-top: 1px solid #000;
+    }
+}
+@media (max-width: 767px) {
+    .smallDivs .singleContainer:nth-child(1) .productTitle{
+        font-size: 29px;
+        line-height: 39px;
+    }
+    .singleContainer{
+        flex-direction: column;
+    }
+    .singleContainer .image, .singleContainer .content{
+        width: 100%;
+    }
+    .singleContainer{
+        width: 100% !important;
+        padding: 0;
+    }
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .lastContainer{
+        padding: 0;
+    }
+    .singleContainer .content{
+        padding: 30px;
+    }
+}
